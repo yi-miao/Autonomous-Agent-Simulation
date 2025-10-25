@@ -14,22 +14,12 @@ This simulation is a sandbox for experimenting with cognition, control theory,
 and emergent behavior—ideal for educators, hobbyists, and researchers alike.
 
 ## 🧮 Agent Architecture
-+---------------------+
-|    Environment      |
-+---------------------+
-          ↑
-          ↓
-+---------------------+
-| Agent               |
-|  - Perception       |
-|  - Inference Engine |
-|  - Effector         |
-+---------------------+
 
-1. Environment: A signal moving contineously and randomly with noise
-2. Perceptor: A Kalman Filter which detects signal from noise
-3. Inference Engine: A PID controller knows the goal and how to plan
-4. Effector: Implement the tasks from the Inference Engine	
+1. World Model: Knowledge about the environment and agent itself
+2. Environment: A signal moving contineously and randomly with noise
+3. Perceptor: A Kalman Filter which detects signal from noise
+4. Inference Engine: A PID controller knows the goal and how to plan
+5. Effector: Implement the tasks from the Inference Engine	
 
 ## 🧩 Features
 
@@ -54,10 +44,13 @@ The agent starts working automatic
 - the blue dot is filtered signal which agent believes true
 - the green dot is its location after detection, process, inference, 
 	planning and actions 
+
 The agent stops when it finally catches the signal
 - the green dot is close enough to the red dot
 - a fire ball is the indicator of "I Catch You!"
+
 Pressing SPACE key to show the history (trace) or not
+
 Pressing ENTER key to restart the simulation	
 
 📚 Philosophy
@@ -68,4 +61,5 @@ and decades of experiences in different industries.
 ## License
 
 MIT License
+
 
